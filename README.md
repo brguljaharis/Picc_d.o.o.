@@ -4,9 +4,6 @@ One of them is table Vehicle that is used to store information about vehicle suc
 Tables are related through vehicle ID that represents ID in the Vehicle table (PK) and VehicleID in VehicleShoppingArticle (FK).
 Database was used to create a model for the application (emdx). So, application has an entity that represents the database, and two classes that represent Vehicles and VehicleShoppingArticles.
 
-## Installing the application 
-To install the application on the computer, please use setup.exe file that can be found in the Build folder. Database mdf file is named Picc and can be found in the main folder.
-
 ## Application logic 
 Logic of the application is based on the main menu that gets called constantly unless user decides to exit app. User has options to add, search, update or delete records from the database.
 *	Adding records – Firstly, record in the Vehicle table is saved and, after that, a record in the VehicleShoppingArticle table is created with corresponding VehicleID. Here are the fields that have some constraints that need to be fulfilled:
