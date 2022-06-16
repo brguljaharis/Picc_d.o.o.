@@ -1,0 +1,28 @@
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\bin\Debug\Picc d.o.o.exe.config
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\bin\Debug\Picc d.o.o.exe
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\bin\Debug\Picc d.o.o.pdb
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\bin\Debug\EntityFramework.dll
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\bin\Debug\EntityFramework.xml
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\obj\Debug\Picc d.o.o.csproj.AssemblyReference.cache
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\obj\Debug\Picc d.o.o.csproj.CoreCompileInputs.cache
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\obj\Debug\Picc d.o.o.csproj.CopyComplete
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\obj\Debug\Picc d.o.o.exe
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\obj\Debug\Picc d.o.o.pdb
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\bin\Debug\ConsoleTables.dll
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o\bin\Debug\ConsoleTables.pdb
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\bin\Debug\Picc d.o.o.exe.config
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\bin\Debug\Picc d.o.o.exe
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\bin\Debug\Picc d.o.o.pdb
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\bin\Debug\ConsoleTables.dll
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\bin\Debug\EntityFramework.dll
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\bin\Debug\ConsoleTables.pdb
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\bin\Debug\EntityFramework.xml
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\obj\Debug\Picc d.o.o.csproj.AssemblyReference.cache
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\obj\Debug\Picc d.o.o.csproj.CoreCompileInputs.cache
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\obj\Debug\Picc d.o.o.csproj.CopyComplete
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\obj\Debug\Picc d.o.o.exe
+C:\Users\Haris Brgulja\Desktop\Softhouse\Picc d.o.o - final touches\obj\Debug\Picc d.o.o.pdb

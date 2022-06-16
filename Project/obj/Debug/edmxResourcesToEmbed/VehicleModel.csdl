@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PiccModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" MaxLength="25" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Color" Type="String" MaxLength="25" FixedLength="true" Unicode="true" />
+    <Property Name="MakeAndModel" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Mileage" Type="Double" Nullable="false" />
+    <Property Name="YearOfManufacture" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="VehicleShoppingArticles" Relationship="PiccModel.FK_VehicleShoppingArticle_ToVehicle" FromRole="Vehicle" ToRole="VehicleShoppingArticle" />
+  </EntityType>
+  <EntityType Name="VehicleShoppingArticle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="IsPriceNegotiable" Type="Boolean" />
+    <Property Name="ContactPhoneNumber" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="VehicleID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Vehicle" Relationship="PiccModel.FK_VehicleShoppingArticle_ToVehicle" FromRole="VehicleShoppingArticle" ToRole="Vehicle" />
+  </EntityType>
+  <EntityContainer Name="PiccEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Vehicles" EntityType="Self.Vehicle" />
+    <EntitySet Name="VehicleShoppingArticles" EntityType="Self.VehicleShoppingArticle" />
+    <AssociationSet Name="FK_VehicleShoppingArticle_ToVehicle" Association="PiccModel.FK_VehicleShoppingArticle_ToVehicle">
+      <End Role="Vehicle" EntitySet="Vehicles" />
+      <End Role="VehicleShoppingArticle" EntitySet="VehicleShoppingArticles" />
+    </AssociationSet>
+  </EntityContainer>
+  <Association Name="FK_VehicleShoppingArticle_ToVehicle">
+    <End Type="PiccModel.Vehicle" Role="Vehicle" Multiplicity="1" />
+    <End Type="PiccModel.VehicleShoppingArticle" Role="VehicleShoppingArticle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="VehicleShoppingArticle">
+        <PropertyRef Name="VehicleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

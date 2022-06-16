@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PiccModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nchar" MaxLength="25" Nullable="false" />
+    <Property Name="Color" Type="nchar" MaxLength="25" />
+    <Property Name="MakeAndModel" Type="nchar" MaxLength="50" Nullable="false" />
+    <Property Name="Mileage" Type="float" Nullable="false" />
+    <Property Name="YearOfManufacture" Type="int" Nullable="false" />
+    <Property Name="Description" Type="nchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="VehicleShoppingArticle">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Price" Type="float" />
+    <Property Name="IsPriceNegotiable" Type="bit" />
+    <Property Name="ContactPhoneNumber" Type="nchar" MaxLength="20" />
+    <Property Name="VehicleID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_VehicleShoppingArticle_ToVehicle">
+    <End Role="Vehicle" Type="Self.Vehicle" Multiplicity="1" />
+    <End Role="VehicleShoppingArticle" Type="Self.VehicleShoppingArticle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="VehicleShoppingArticle">
+        <PropertyRef Name="VehicleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PiccModelStoreContainer">
+    <EntitySet Name="Vehicle" EntityType="Self.Vehicle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VehicleShoppingArticle" EntityType="Self.VehicleShoppingArticle" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_VehicleShoppingArticle_ToVehicle" Association="Self.FK_VehicleShoppingArticle_ToVehicle">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="VehicleShoppingArticle" EntitySet="VehicleShoppingArticle" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
